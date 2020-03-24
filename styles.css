@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #f9f3ec;
+}
+
+#board-containter {
+    position: absolute;
+    height: 500px;
+    width: 600px;
+    top: 120px;
+    left: 50%;
+}
+
+.board {
+    display: flex;
+}
+
+.slot {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.hole {
+    transform: translate(-30px, -30px);
+    /* transform: translate(10px, 10px); */
+    width: 60px;
+    height: 60px;
+    /* background-color: white; */
+    border-radius: 50%;
+    border: 40px #63aabc solid;
+}
+
+.highlightedHole {
+    width: 63px;
+    height: 63px;
+}
+
+.red {
+    background-color: #ed3833;
+}
+
+.black {
+    background-color: #202020;
+}
+
+#dialogTransparecy {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 10%;
+    /* transition: 0.5s; */
+    /* z-index: 10; */
+    visibility: hidden;
+}
+
+#dialogParent {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    top: 200px;
+    transition: 0.2s;
+    /* visibility: hidden; */
+}
+
+#dialog {
+    position: absolute;
+    top: 15%;
+    /* left: %; */
+    height: 0%;
+    width: 0%;
+    transition: 0.5s;
+    /* height: 200px;
+    width: 400px; */
+    background-color: #63aabc;
+    opacity: 90%;
+}
+
+.close {
+    position: absolute;
+    font-size: 0px;
+    /* font-size: 30px; */
+    font-family: Fredoka One;
+    text-decoration: none;
+    color: #60204b;
+    top: 120px;
+    left: 45%;
+    transition: 1s;
+}
+
+#dialog-text {
+    position: absolute;
+    font-family: Bangers;
+    font-size: 70px;
+    text-align: center;
+    color: #f9f3ec;
+    top: 35px;
+    left: 42%;
+    transition: 0.5s;
+}
+
+#title {
+    position: absolute;
+    left: 8%;
+    top: 200px;
+    color: #ed3833;
+    font-size: 90px;
+    font-family: Bangers;
+}
+
+#signature {
+    position: absolute;
+    left: 9%;
+    top: 300px;
+    color: #ed3833;
+    font-size: 20px;
+    font-family: Gloria Hallelujah;
+}
+
+#turn {
+    color: #202020;
+    font-size: 25px;
+    font-family: Fredoka One;
+    position: absolute;
+    top: 65px;
+    left: 62%;
+    /* transition: 0.2s; */
+}
